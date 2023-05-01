@@ -13,7 +13,7 @@
             person1.Age = 23;
             person1.Nationality = "Uzbekistan";
             person1.Country = "Norwegian";
-            person1.ComingOfAge = true;
+            person1.IsAdult = true;
             person1.Gender = "Man";
 
 
@@ -29,7 +29,7 @@
             Console.WriteLine("Locations:");
             Console.WriteLine(person1.Country);
             Console.WriteLine("Coming of age:");
-            Console.WriteLine(person1.ComingOfAge);
+            Console.WriteLine(person1.IsAdult);
             Console.WriteLine("Gender:");
             Console.WriteLine(person1.Gender);
             Console.WriteLine("======================");
@@ -41,7 +41,7 @@
             person2.Age = 17;
             person2.Nationality = "Russia";
             person2.Country = "Russia";
-            person2.ComingOfAge = false;
+            person2.IsAdult = false;
             person2.Gender = "Girl";
 
             Console.WriteLine("======================");
@@ -56,7 +56,7 @@
             Console.WriteLine("Locations:");
             Console.WriteLine(person2.Country);
             Console.WriteLine("Coming of age:");
-            Console.WriteLine(person2.ComingOfAge);
+            Console.WriteLine(person2.IsAdult);
             Console.WriteLine("Gender:");
             Console.WriteLine(person2.Gender);
             Console.WriteLine("======================");
@@ -68,7 +68,7 @@
             person3.Age = 19;
             person3.Nationality = "Spain";
             person3.Country = "Finland";
-            person3.ComingOfAge = true;
+            person3.IsAdult = true;
             person3.Gender = "Man";
 
             Console.WriteLine("======================");
@@ -83,7 +83,7 @@
             Console.WriteLine("Locations:");
             Console.WriteLine(person3.Country);
             Console.WriteLine("Coming of age:");
-            Console.WriteLine(person3.ComingOfAge);
+            Console.WriteLine(person3.IsAdult);
             Console.WriteLine("Gender:");
             Console.WriteLine(person3.Gender);
             Console.WriteLine("======================");
@@ -101,7 +101,7 @@
         public byte _age;
         public string _nationality;
         public string _country;
-        public bool _comingOfAge;
+        public bool _isAdult;
         public string _gender;
 
 
@@ -188,15 +188,15 @@
         /// <summary>
         /// достиг ли человек совершеннолетия
         /// </summary>
-        public bool ComingOfAge
+        public bool IsAdult
         {
             set 
             { 
-                _comingOfAge = value; 
+                _isAdult = value; 
             }
             get 
             {
-                return _comingOfAge;
+                return _isAdult;
             }
         }
 
