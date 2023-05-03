@@ -12,7 +12,7 @@
             person1.LastName = "Emelin";
             person1.Age = 23;
             person1.Nationality = "Uzbekistan";
-            person1.Country = "Norwegian";
+            person1.Locations = "Norwegian";
             person1.IsAdult = true;
             person1.Gender = "Man";
 
@@ -27,7 +27,7 @@
             Console.WriteLine("Nationality");
             Console.WriteLine(person1.Nationality);
             Console.WriteLine("Locations:");
-            Console.WriteLine(person1.Country);
+            Console.WriteLine(person1.Locations);
             Console.WriteLine("Coming of age:");
             Console.WriteLine(person1.IsAdult);
             Console.WriteLine("Gender:");
@@ -40,7 +40,7 @@
             person2.LastName = "Voronova";
             person2.Age = 17;
             person2.Nationality = "Russia";
-            person2.Country = "Russia";
+            person2.Locations = "Russia";
             person2.IsAdult = false;
             person2.Gender = "Girl";
 
@@ -54,7 +54,7 @@
             Console.WriteLine("Nationality");
             Console.WriteLine(person2.Nationality);
             Console.WriteLine("Locations:");
-            Console.WriteLine(person2.Country);
+            Console.WriteLine(person2.Locations);
             Console.WriteLine("Coming of age:");
             Console.WriteLine(person2.IsAdult);
             Console.WriteLine("Gender:");
@@ -67,7 +67,7 @@
             person3.LastName = "Rodriguez";
             person3.Age = 19;
             person3.Nationality = "Spain";
-            person3.Country = "Finland";
+            person3.Locations = "Finland";
             person3.IsAdult = true;
             person3.Gender = "Man";
 
@@ -81,11 +81,38 @@
             Console.WriteLine("Nationality");
             Console.WriteLine(person3.Nationality);
             Console.WriteLine("Locations:");
-            Console.WriteLine(person3.Country);
+            Console.WriteLine(person3.Locations);
             Console.WriteLine("Coming of age:");
             Console.WriteLine(person3.IsAdult);
             Console.WriteLine("Gender:");
             Console.WriteLine(person3.Gender);
+            Console.WriteLine("======================");
+
+            Person person4 = new Person();
+
+            person4.Name = "Marco";
+            person4.LastName = "Marino";
+            person4.Age = 30;
+            person4.Nationality = "Italian";
+            person4.Locations = "America";
+            person4.IsAdult = true;
+            person4.Gender = "Man";
+
+            Console.WriteLine("======================");
+            Console.WriteLine("Name:");
+            Console.WriteLine(person4.Name);
+            Console.WriteLine("Last Name:");
+            Console.WriteLine(person4.LastName);
+            Console.WriteLine("Age:");
+            Console.WriteLine(person4.Age);
+            Console.WriteLine("Nationality");
+            Console.WriteLine(person4.Nationality);
+            Console.WriteLine("Locations:");
+            Console.WriteLine(person4.Locations);
+            Console.WriteLine("Coming of age:");
+            Console.WriteLine(person4.IsAdult);
+            Console.WriteLine("Gender:");
+            Console.WriteLine(person4.Gender);
             Console.WriteLine("======================");
         }
     }
@@ -100,7 +127,7 @@
         public string _lastName;
         public byte _age;
         public string _nationality;
-        public string _country;
+        public string _locations;
         public bool _isAdult;
         public string _gender;
 
@@ -172,15 +199,15 @@
         /// <summary>
         /// Местоположения человека
         /// </summary>
-        public string Country
+        public string Locations
         {
             set
             {
-                _country = value;
+                _locations = value;
             }
             get
             {
-                return _country;
+                return _locations;
             }
         }
 
